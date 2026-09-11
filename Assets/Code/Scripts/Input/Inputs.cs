@@ -98,6 +98,42 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Action1"",
+                    ""type"": ""Button"",
+                    ""id"": ""cc756a6c-6ee7-41e9-9916-59e74490f924"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Action2"",
+                    ""type"": ""Button"",
+                    ""id"": ""01bd678b-7768-4193-94de-e9efce07afd9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Action3"",
+                    ""type"": ""Button"",
+                    ""id"": ""c8eccd42-6920-455e-bc8d-db7332a2822a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Cancel"",
+                    ""type"": ""Button"",
+                    ""id"": ""b70a1993-1257-4031-9daa-0c05d59a9c70"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -364,6 +400,61 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""InventoryR"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3b222375-3f53-4faf-afb8-fb4b03d2b9e8"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d67f8806-eff8-43b6-8cfa-9db8a93ba30f"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2a3eea6-5519-45bb-9d35-3340cee63647"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2e0fc66-02b5-4c19-88d7-ad26175c7106"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ee64c6b-a36b-457f-93ad-8a457a9bd4ff"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -402,6 +493,10 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_Movements_CycleCamera = m_Movements.FindAction("CycleCamera", throwIfNotFound: true);
         m_Movements_InventoryL = m_Movements.FindAction("InventoryL", throwIfNotFound: true);
         m_Movements_InventoryR = m_Movements.FindAction("InventoryR", throwIfNotFound: true);
+        m_Movements_Action1 = m_Movements.FindAction("Action1", throwIfNotFound: true);
+        m_Movements_Action2 = m_Movements.FindAction("Action2", throwIfNotFound: true);
+        m_Movements_Action3 = m_Movements.FindAction("Action3", throwIfNotFound: true);
+        m_Movements_Cancel = m_Movements.FindAction("Cancel", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -471,6 +566,10 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_Movements_CycleCamera;
     private readonly InputAction m_Movements_InventoryL;
     private readonly InputAction m_Movements_InventoryR;
+    private readonly InputAction m_Movements_Action1;
+    private readonly InputAction m_Movements_Action2;
+    private readonly InputAction m_Movements_Action3;
+    private readonly InputAction m_Movements_Cancel;
     public struct MovementsActions
     {
         private @Inputs m_Wrapper;
@@ -483,6 +582,10 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         public InputAction @CycleCamera => m_Wrapper.m_Movements_CycleCamera;
         public InputAction @InventoryL => m_Wrapper.m_Movements_InventoryL;
         public InputAction @InventoryR => m_Wrapper.m_Movements_InventoryR;
+        public InputAction @Action1 => m_Wrapper.m_Movements_Action1;
+        public InputAction @Action2 => m_Wrapper.m_Movements_Action2;
+        public InputAction @Action3 => m_Wrapper.m_Movements_Action3;
+        public InputAction @Cancel => m_Wrapper.m_Movements_Cancel;
         public InputActionMap Get() { return m_Wrapper.m_Movements; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -516,6 +619,18 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @InventoryR.started += instance.OnInventoryR;
             @InventoryR.performed += instance.OnInventoryR;
             @InventoryR.canceled += instance.OnInventoryR;
+            @Action1.started += instance.OnAction1;
+            @Action1.performed += instance.OnAction1;
+            @Action1.canceled += instance.OnAction1;
+            @Action2.started += instance.OnAction2;
+            @Action2.performed += instance.OnAction2;
+            @Action2.canceled += instance.OnAction2;
+            @Action3.started += instance.OnAction3;
+            @Action3.performed += instance.OnAction3;
+            @Action3.canceled += instance.OnAction3;
+            @Cancel.started += instance.OnCancel;
+            @Cancel.performed += instance.OnCancel;
+            @Cancel.canceled += instance.OnCancel;
         }
 
         private void UnregisterCallbacks(IMovementsActions instance)
@@ -544,6 +659,18 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @InventoryR.started -= instance.OnInventoryR;
             @InventoryR.performed -= instance.OnInventoryR;
             @InventoryR.canceled -= instance.OnInventoryR;
+            @Action1.started -= instance.OnAction1;
+            @Action1.performed -= instance.OnAction1;
+            @Action1.canceled -= instance.OnAction1;
+            @Action2.started -= instance.OnAction2;
+            @Action2.performed -= instance.OnAction2;
+            @Action2.canceled -= instance.OnAction2;
+            @Action3.started -= instance.OnAction3;
+            @Action3.performed -= instance.OnAction3;
+            @Action3.canceled -= instance.OnAction3;
+            @Cancel.started -= instance.OnCancel;
+            @Cancel.performed -= instance.OnCancel;
+            @Cancel.canceled -= instance.OnCancel;
         }
 
         public void RemoveCallbacks(IMovementsActions instance)
@@ -589,5 +716,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         void OnCycleCamera(InputAction.CallbackContext context);
         void OnInventoryL(InputAction.CallbackContext context);
         void OnInventoryR(InputAction.CallbackContext context);
+        void OnAction1(InputAction.CallbackContext context);
+        void OnAction2(InputAction.CallbackContext context);
+        void OnAction3(InputAction.CallbackContext context);
+        void OnCancel(InputAction.CallbackContext context);
     }
 }
