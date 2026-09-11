@@ -1,27 +1,44 @@
 using UnityEngine;
 using System;
 
-using UnityEngine.InputSystem;
 
 namespace WebGolf
 {
-    public class BallMove : MonoBehaviour
+    public class BallMove : BaseInput
     {
-        private Inputs input;
+        [SerializeField] private Rigidbody rb;
 
-        protected void Awake()
+
+        private GameManager gameManager;
+
+        public void InitThis(GameManager gameManager)
         {
-            input = new Inputs();
+            this.gameManager = gameManager;
         }
 
-        private void OnEnable()
+        public override void OnEnable()
         {
-            input.Enable();
+            base.OnEnable();
+
+            
         }
 
-        private void OnDisable()
+        private void Update()
         {
-            input.Disable();
+            //inputs.Movements.RotateCamera.ReadValue<Vector2>();
+            inputs.Movements.Shoot.started += _ => shoot = true;
+            inputs.Movements.Shoot.canceled += _ => shoot = false;
+        }
+
+        public override void Awake()
+        {
+            base.Awake();
+            print(shoot);
+        }
+
+        public override void OnDisable()
+        {
+            base.OnDisable();
         }
     }
 }

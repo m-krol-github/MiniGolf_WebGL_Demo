@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1775656445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775656446}
+  - component: {fileID: 1775656447}
+  m_Layer: 0
+  m_Name: Hole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1775656446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775656445}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -33.26, y: 0, z: 6.81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4612295873027621600}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1775656447
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775656445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.17
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &32252646238799084
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +57,7 @@ GameObject:
   - component: {fileID: 3330531160706116648}
   - component: {fileID: 6222616984003903437}
   - component: {fileID: 9017235990765426319}
+  - component: {fileID: 1405208415}
   m_Layer: 0
   m_Name: Bumper010
   m_TagString: Untagged
@@ -83,6 +130,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1405208415
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32252646238799084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5535742278261617582, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &344195291078405438
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +155,7 @@ GameObject:
   - component: {fileID: 2629847081908454680}
   - component: {fileID: 7644213595988590321}
   - component: {fileID: 5908484765169228}
+  - component: {fileID: 307628006}
   m_Layer: 0
   m_Name: BumberRim006
   m_TagString: Untagged
@@ -166,6 +228,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &307628006
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344195291078405438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: 6.0576086e-15, y: 0.00000010887878, z: 1.8266828}
 --- !u!1 &1179599462309656492
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +253,7 @@ GameObject:
   - component: {fileID: 498926495913448882}
   - component: {fileID: 535956323023670297}
   - component: {fileID: 4494500580371170285}
+  - component: {fileID: 1341180536}
   m_Layer: 0
   m_Name: BumberRim007
   m_TagString: Untagged
@@ -249,6 +326,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1341180536
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179599462309656492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: -0.00000053127656, y: 0.000000054439365, z: 1.8266828}
 --- !u!1 &1199677407988870405
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +351,7 @@ GameObject:
   - component: {fileID: 230399755901634049}
   - component: {fileID: 2394109632082274753}
   - component: {fileID: 1098223434823041336}
+  - component: {fileID: 8923317725301054476}
   m_Layer: 0
   m_Name: Box001
   m_TagString: Untagged
@@ -332,6 +424,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8923317725301054476
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199677407988870405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5060444177187149915, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &1212216073039113666
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +449,7 @@ GameObject:
   - component: {fileID: 4113347791281030195}
   - component: {fileID: 222343425010125870}
   - component: {fileID: 2345624554815514994}
+  - component: {fileID: 1652231098}
   m_Layer: 0
   m_Name: Bumper009
   m_TagString: Untagged
@@ -415,6 +522,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1652231098
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212216073039113666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3667298888775799115, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &1386075025005024734
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +547,7 @@ GameObject:
   - component: {fileID: 8518734004922735461}
   - component: {fileID: 1553884791866590443}
   - component: {fileID: 4060721102425566841}
+  - component: {fileID: 739949480}
   m_Layer: 0
   m_Name: CylBand
   m_TagString: Untagged
@@ -498,6 +620,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &739949480
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386075025005024734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2874645175565989030, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &1853623335248408858
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +645,7 @@ GameObject:
   - component: {fileID: 1000402860623596831}
   - component: {fileID: 8407948641051466830}
   - component: {fileID: 215218086363864559}
+  - component: {fileID: 1754215263}
   m_Layer: 0
   m_Name: BumberRim003
   m_TagString: Untagged
@@ -581,6 +718,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1754215263
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853623335248408858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: 3.244839e-15, y: -0.00000058571595, z: 1.8266828}
 --- !u!1 &2631072556288864507
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +743,7 @@ GameObject:
   - component: {fileID: 4964061799079338119}
   - component: {fileID: 4726558685685494133}
   - component: {fileID: 1971421865808139515}
+  - component: {fileID: 535154128}
   m_Layer: 0
   m_Name: Bumper013
   m_TagString: Untagged
@@ -664,6 +816,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &535154128
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2631072556288864507}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8632185325821632096, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &3878173979376272430
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +841,7 @@ GameObject:
   - component: {fileID: 8301510310814040135}
   - component: {fileID: 7285805653549217513}
   - component: {fileID: 3616889518818132772}
+  - component: {fileID: 8923317725301054474}
   m_Layer: 0
   m_Name: BumberRim
   m_TagString: Untagged
@@ -747,6 +914,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8923317725301054474
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878173979376272430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: 0.0000018914037, y: 0.0000020866119, z: 1.8266833}
 --- !u!1 &4640343643437223055
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +939,7 @@ GameObject:
   - component: {fileID: 4328084712179831307}
   - component: {fileID: 7924862332061385454}
   - component: {fileID: 8540515752460113569}
+  - component: {fileID: 880878548}
   m_Layer: 0
   m_Name: Bumper015
   m_TagString: Untagged
@@ -830,6 +1012,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &880878548
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640343643437223055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7267153803978991458, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &5300027948414812146
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +1037,7 @@ GameObject:
   - component: {fileID: 4134719687846313856}
   - component: {fileID: 8384046544921888486}
   - component: {fileID: 3366465354548568843}
+  - component: {fileID: 1245995167}
   m_Layer: 0
   m_Name: BumberRim002
   m_TagString: Untagged
@@ -913,6 +1110,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1245995167
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300027948414812146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: -9.734521e-15, y: 0.00000005443939, z: 1.8266828}
 --- !u!1 &6148435531385887381
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +1135,7 @@ GameObject:
   - component: {fileID: 7025277942067062316}
   - component: {fileID: 4483550420731894409}
   - component: {fileID: 7346702394461581872}
+  - component: {fileID: 1065809629}
   m_Layer: 0
   m_Name: Bumper014
   m_TagString: Untagged
@@ -996,6 +1208,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1065809629
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148435531385887381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3346150001070681276, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &6195087618392596821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,6 +1233,7 @@ GameObject:
   - component: {fileID: 4985756021771023023}
   - component: {fileID: 2243247783197923419}
   - component: {fileID: 2443866121585806096}
+  - component: {fileID: 1534718707}
   m_Layer: 0
   m_Name: Bumper011
   m_TagString: Untagged
@@ -1079,6 +1306,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1534718707
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6195087618392596821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2924862948026100166, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &6764972177252180326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1331,7 @@ GameObject:
   - component: {fileID: 4612295873027621600}
   - component: {fileID: 6759134065616926222}
   - component: {fileID: 8244540486614033898}
+  - component: {fileID: 2067496722}
   m_Layer: 0
   m_Name: HoleRim
   m_TagString: Untagged
@@ -1108,7 +1350,8 @@ Transform:
   m_LocalPosition: {x: 2.7838767, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1775656446}
   m_Father: {fileID: 8961960178028902754}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1162,6 +1405,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2067496722
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6764972177252180326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 685682757278605590, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &6772508998324397170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1430,7 @@ GameObject:
   - component: {fileID: 2468887481377471517}
   - component: {fileID: 2195354093899515895}
   - component: {fileID: 5615719328428848265}
+  - component: {fileID: 568692241}
   m_Layer: 0
   m_Name: BumberRim004
   m_TagString: Untagged
@@ -1245,6 +1503,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &568692241
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6772508998324397170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: -0.000000115483395, y: 0.00000028267047, z: 1.8266833}
 --- !u!1 &7581478298459978283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1528,7 @@ GameObject:
   - component: {fileID: 2782290633226760045}
   - component: {fileID: 6466633541095501038}
   - component: {fileID: 5115112400728808651}
+  - component: {fileID: 8923317725301054475}
   m_Layer: 0
   m_Name: Box002
   m_TagString: Untagged
@@ -1328,6 +1601,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8923317725301054475
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581478298459978283}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2232952877369940510, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &7661031312774242335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1626,7 @@ GameObject:
   - component: {fileID: 2246751803508893062}
   - component: {fileID: 3239105421235959359}
   - component: {fileID: 1941956755974855372}
+  - component: {fileID: 8923317725301054473}
   m_Layer: 0
   m_Name: BumberRim001
   m_TagString: Untagged
@@ -1411,6 +1699,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8923317725301054473
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7661031312774242335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: -0.000000015944925, y: -0.000000038494463, z: 1.8266833}
 --- !u!1 &8210556524971916259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1724,7 @@ GameObject:
   - component: {fileID: 4478511014371819236}
   - component: {fileID: 5127382650809812880}
   - component: {fileID: 2616912920834453589}
+  - component: {fileID: 1725690495}
   m_Layer: 0
   m_Name: Bumper012
   m_TagString: Untagged
@@ -1494,6 +1797,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1725690495
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8210556524971916259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2179924412655606259, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &8317682374070626505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,6 +1822,7 @@ GameObject:
   - component: {fileID: 8001316237566936042}
   - component: {fileID: 2497790185419702463}
   - component: {fileID: 8957286939806443172}
+  - component: {fileID: 1527399808}
   m_Layer: 0
   m_Name: Bumper007
   m_TagString: Untagged
@@ -1577,6 +1895,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1527399808
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8317682374070626505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5442315987285514121, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}
 --- !u!1 &8580650179385598936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,6 +1972,7 @@ GameObject:
   - component: {fileID: 9002643484545416758}
   - component: {fileID: 3697673761232019238}
   - component: {fileID: 2280277065519739141}
+  - component: {fileID: 684390605}
   m_Layer: 0
   m_Name: BumberRim005
   m_TagString: Untagged
@@ -1712,6 +2045,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &684390605
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8823182401341894609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 1.7
+  m_Direction: 2
+  m_Center: {x: 0.000000076988925, y: -0.00000014076863, z: 1.8266828}
 --- !u!1 &8861333959264737126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,6 +2070,7 @@ GameObject:
   - component: {fileID: 5817296882907433255}
   - component: {fileID: 6006419838692030945}
   - component: {fileID: 7404622563509201705}
+  - component: {fileID: 8923317725301054477}
   m_Layer: 0
   m_Name: Bands
   m_TagString: Untagged
@@ -1795,3 +2143,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8923317725301054477
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8861333959264737126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7216153606481892375, guid: 08f2e8864ea307d4ab7c30b9901a37f8, type: 3}

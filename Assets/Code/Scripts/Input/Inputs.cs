@@ -44,6 +44,60 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""29307a9d-64d2-4dd9-bfd4-4a273a8d7dc8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LShoulder"",
+                    ""type"": ""Button"",
+                    ""id"": ""fc9590ec-2179-4c6a-90c0-99686d63b937"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RShoulder"",
+                    ""type"": ""Button"",
+                    ""id"": ""b6c36158-0b69-4000-a23c-8b0f84c9d269"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CycleCamera"",
+                    ""type"": ""Button"",
+                    ""id"": ""a8c27168-0582-48d7-9884-d6aad29cdcfa"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""InventoryL"",
+                    ""type"": ""Button"",
+                    ""id"": ""f1489da5-52d3-4682-b637-7b3e1dce2818"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""InventoryR"",
+                    ""type"": ""Button"",
+                    ""id"": ""bfcf4968-b5db-4391-a065-f507825a19db"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -178,6 +232,138 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""RotateCamera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""77e7f788-4a38-4e7f-b55d-e4747cc66d97"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ef9508eb-2ca1-47e4-90c6-0dd7cfcabab0"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6292f2d0-cc89-47ce-8a19-8e0634d28276"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LShoulder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""45a65ba9-6a97-46ee-98fd-e96d38b1b809"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LShoulder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5bab4b51-7013-4419-b34b-799f585946fd"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RShoulder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6e155307-b76c-4a4c-80d5-cdc271298ec2"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RShoulder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d4232614-64de-40de-8988-20c7f84ec7f0"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CycleCamera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a0bceeeb-dbea-4038-a695-121099e4d41f"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CycleCamera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""509f5e39-854f-4894-b2ab-17d1e0fc0807"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventoryL"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e09f611a-2783-4629-946c-2c87b9019fd2"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventoryL"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f6b5b1d7-87b4-40ed-9b95-4d8e5fa03375"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventoryR"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0896c4ae-2697-47d4-9af6-89eef83528b4"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventoryR"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -210,6 +396,12 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_Movements = asset.FindActionMap("Movements", throwIfNotFound: true);
         m_Movements_RotateTargeting = m_Movements.FindAction("RotateTargeting", throwIfNotFound: true);
         m_Movements_RotateCamera = m_Movements.FindAction("RotateCamera", throwIfNotFound: true);
+        m_Movements_Shoot = m_Movements.FindAction("Shoot", throwIfNotFound: true);
+        m_Movements_LShoulder = m_Movements.FindAction("LShoulder", throwIfNotFound: true);
+        m_Movements_RShoulder = m_Movements.FindAction("RShoulder", throwIfNotFound: true);
+        m_Movements_CycleCamera = m_Movements.FindAction("CycleCamera", throwIfNotFound: true);
+        m_Movements_InventoryL = m_Movements.FindAction("InventoryL", throwIfNotFound: true);
+        m_Movements_InventoryR = m_Movements.FindAction("InventoryR", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -273,12 +465,24 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private List<IMovementsActions> m_MovementsActionsCallbackInterfaces = new List<IMovementsActions>();
     private readonly InputAction m_Movements_RotateTargeting;
     private readonly InputAction m_Movements_RotateCamera;
+    private readonly InputAction m_Movements_Shoot;
+    private readonly InputAction m_Movements_LShoulder;
+    private readonly InputAction m_Movements_RShoulder;
+    private readonly InputAction m_Movements_CycleCamera;
+    private readonly InputAction m_Movements_InventoryL;
+    private readonly InputAction m_Movements_InventoryR;
     public struct MovementsActions
     {
         private @Inputs m_Wrapper;
         public MovementsActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @RotateTargeting => m_Wrapper.m_Movements_RotateTargeting;
         public InputAction @RotateCamera => m_Wrapper.m_Movements_RotateCamera;
+        public InputAction @Shoot => m_Wrapper.m_Movements_Shoot;
+        public InputAction @LShoulder => m_Wrapper.m_Movements_LShoulder;
+        public InputAction @RShoulder => m_Wrapper.m_Movements_RShoulder;
+        public InputAction @CycleCamera => m_Wrapper.m_Movements_CycleCamera;
+        public InputAction @InventoryL => m_Wrapper.m_Movements_InventoryL;
+        public InputAction @InventoryR => m_Wrapper.m_Movements_InventoryR;
         public InputActionMap Get() { return m_Wrapper.m_Movements; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -294,6 +498,24 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @RotateCamera.started += instance.OnRotateCamera;
             @RotateCamera.performed += instance.OnRotateCamera;
             @RotateCamera.canceled += instance.OnRotateCamera;
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
+            @LShoulder.started += instance.OnLShoulder;
+            @LShoulder.performed += instance.OnLShoulder;
+            @LShoulder.canceled += instance.OnLShoulder;
+            @RShoulder.started += instance.OnRShoulder;
+            @RShoulder.performed += instance.OnRShoulder;
+            @RShoulder.canceled += instance.OnRShoulder;
+            @CycleCamera.started += instance.OnCycleCamera;
+            @CycleCamera.performed += instance.OnCycleCamera;
+            @CycleCamera.canceled += instance.OnCycleCamera;
+            @InventoryL.started += instance.OnInventoryL;
+            @InventoryL.performed += instance.OnInventoryL;
+            @InventoryL.canceled += instance.OnInventoryL;
+            @InventoryR.started += instance.OnInventoryR;
+            @InventoryR.performed += instance.OnInventoryR;
+            @InventoryR.canceled += instance.OnInventoryR;
         }
 
         private void UnregisterCallbacks(IMovementsActions instance)
@@ -304,6 +526,24 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @RotateCamera.started -= instance.OnRotateCamera;
             @RotateCamera.performed -= instance.OnRotateCamera;
             @RotateCamera.canceled -= instance.OnRotateCamera;
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
+            @LShoulder.started -= instance.OnLShoulder;
+            @LShoulder.performed -= instance.OnLShoulder;
+            @LShoulder.canceled -= instance.OnLShoulder;
+            @RShoulder.started -= instance.OnRShoulder;
+            @RShoulder.performed -= instance.OnRShoulder;
+            @RShoulder.canceled -= instance.OnRShoulder;
+            @CycleCamera.started -= instance.OnCycleCamera;
+            @CycleCamera.performed -= instance.OnCycleCamera;
+            @CycleCamera.canceled -= instance.OnCycleCamera;
+            @InventoryL.started -= instance.OnInventoryL;
+            @InventoryL.performed -= instance.OnInventoryL;
+            @InventoryL.canceled -= instance.OnInventoryL;
+            @InventoryR.started -= instance.OnInventoryR;
+            @InventoryR.performed -= instance.OnInventoryR;
+            @InventoryR.canceled -= instance.OnInventoryR;
         }
 
         public void RemoveCallbacks(IMovementsActions instance)
@@ -343,5 +583,11 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     {
         void OnRotateTargeting(InputAction.CallbackContext context);
         void OnRotateCamera(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+        void OnLShoulder(InputAction.CallbackContext context);
+        void OnRShoulder(InputAction.CallbackContext context);
+        void OnCycleCamera(InputAction.CallbackContext context);
+        void OnInventoryL(InputAction.CallbackContext context);
+        void OnInventoryR(InputAction.CallbackContext context);
     }
 }
